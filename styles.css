@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 0, 0, 0, 20px;
+  flex: 1;
+}
+
+.header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.widget {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.widget h2 {
+  margin-top: 0;
+}
+
+.sidebar ul li a.active {
+  color: #4caf50; /* Warna hijau untuk menu aktif */
+  font-weight: bold;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  /* justify-content: space-around; */
+}
+
+.main-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.sub-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sub-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  width: calc(50% - 5px);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  word-wrap: break-word; /* Memastikan kata panjang dipecah */
+  overflow: hidden; /* Mencegah konten meluber keluar dari sub-card */
+  text-overflow: ellipsis; /* Menampilkan '...' jika teks terlalu panjang */
+  /* white-space: nowrap; Mencegah teks dari pembungkusan otomatis */
+}
+
+.sub-card:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .main-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .main-card {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 10px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .widget {
+    margin-bottom: 15px;
+  }
+}
