@@ -91,7 +91,7 @@ body {
   margin: 10px;
   width: calc(33% - 20px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   overflow: hidden;
 }
 
@@ -113,11 +113,34 @@ body {
   word-wrap: break-word; /* Memastikan kata panjang dipecah */
   overflow: hidden; /* Mencegah konten meluber keluar dari sub-card */
   text-overflow: ellipsis; /* Menampilkan '...' jika teks terlalu panjang */
+  cursor: pointer;
   /* white-space: nowrap; Mencegah teks dari pembungkusan otomatis */
+}
+
+/* Dropdown styles */
+.dropdown {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+  background: #444;
+}
+
+.dropdown li a {
+  color: white;
+}
+
+.dropdown.show {
+  display: block;
 }
 
 .sub-card:hover {
   background-color: #e0e0e0;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 /* Responsive */
@@ -129,7 +152,7 @@ body {
 
 @media (max-width: 768px) {
   .sidebar {
-    width: 100%;
+    width: 50%;
     height: auto;
     position: relative;
   }

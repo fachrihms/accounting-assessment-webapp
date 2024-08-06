@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accounting Asessment</title>
+    <title>Accounting Assessment</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,9 +12,25 @@
       <ul>
         <li><a href="#home" class="menu-item">Home</a></li>
         <li><a href="#project-management" class="menu-item">Project Management</a></li>
-        <li><a href="#tasks" class="menu-item">Tugas</a></li>
-        <li><a href="#timeline" class="menu-item">Timeline</a></li>
-        <li><a href="#resources" class="menu-item">Sumber Daya</a></li>
+        <li>
+          <a href="#tasks" class="menu-item" id="tasks-menu">Kuesioner Assessment & Improvement</a>
+          <ul class="dropdown" id="tasks-dropdown">
+            <li><a href="#" id="siklus-lingkungan-pengendalian-link">Siklus Lingkungan Pengendalian</a></li>
+            <li><a href="#" id="siklus-pendapatan-dan-penagihan-link">Siklus Pendapatan dan Penagihan</a></li>
+            <li><a href="#" id="siklus-pembelian-dan-pengeluaran-kas-link">Siklus Pembelian dan Pengeluaran Kas</a></li>
+            <li><a href="#" id="siklus-penerimaan-dan-penggajian-karyawan-link">Siklus Penerimaan dan Penggajian Karyawan</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#pembuktian" class="menu-item" id="pembuktian-menu">Pembuktian Dokumen Assessment & Improvement</a>
+          <ul class="dropdown" id="pembuktian-dropdown">
+            <li><a href="#" id="pembuktian-lingkungan-pengendalian-link">Siklus Lingkungan Pengendalian</a></li>
+            <li><a href="#">Siklus Pendapatan dan Penagihan</a></li>
+            <li><a href="#">Siklus Pembelian dan Pengeluaran Kas</a></li>
+            <li><a href="#">Siklus Penerimaan dan Penggajian Karyawan</a></li>
+          </ul>
+        </li>
+        <li><a href="#resources" class="menu-item">Reporting</a></li>
         <li><a href="#reports" class="menu-item">Laporan</a></li>
         <li><a href="#settings" class="menu-item">Pengaturan</a></li>
       </ul>
@@ -22,7 +38,10 @@
 
     <div class="main-content">
       <div class="header">
-        <h1>Asessment & Improvement For Accounting & Internal Control</h1>
+        <h1>Assessment & Improvement For Accounting & Internal Control</h1>
+        <div id="breadcrumb" class="breadcrumb">
+          <!-- Keterangan navigasi akan ditambahkan di sini -->
+        </div>
       </div>
       <div class="container">
         <div id="home-content">
@@ -43,16 +62,16 @@
         <div id="project-management-content" style="display: none">
           <div class="card-container">
             <div class="main-card">
-              <h3>Kuesioner Asessment & Improvement</h3>
+              <h3>Kuesioner Assessment & Improvement</h3>
               <div class="sub-card-container">
-                <div class="sub-card">Siklus Lingkungan Pengendalian</div>
-                <div class="sub-card">Siklus Pendapatan dan Penagihan</div>
-                <div class="sub-card">Siklus Pembelian dan Pengeluaran Kas</div>
-                <div class="sub-card">Siklus Penerimaan dan Penggajian Karyawan</div>
+                <div class="sub-card" id="subcard-lingkungan-pengendalian">Siklus Lingkungan Pengendalian</div>
+                <div class="sub-card" id="subcard-pendapatan-dan-penagihan">Siklus Pendapatan dan Penagihan</div>
+                <div class="sub-card" id="subcard-pembelian-dan-pengeluaran-kas">Siklus Pembelian dan Pengeluaran Kas</div>
+                <div class="sub-card" id="subcard-penerimaan-dan-penggajian-karyawan">Siklus Penerimaan dan Penggajian Karyawan</div>
               </div>
             </div>
             <div class="main-card">
-              <h3>Pembuktian Dokumen Asessment & Improvement</h3>
+              <h3>Pembuktian Dokumen Assessment & Improvement</h3>
               <div class="sub-card-container">
                 <div class="sub-card">Siklus Lingkungan Pengendalian</div>
                 <div class="sub-card">Siklus Pendapatan dan Penagihan</div>
@@ -68,6 +87,37 @@
                 <div class="sub-card">Scoring Rekap</div>
               </div>
             </div>
+            <div class="main-card">
+              <h3>Jadwal Pertemuan</h3>
+              <div class="sub-card-container">
+                <div class="sub-card">Pertemuan Awal</div>
+                <div class="sub-card">Pertemuan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="siklus-lingkungan-pengendalian-content" style="display: none">
+          <h2>Siklus Lingkungan Pengendalian</h2>
+          <div class="content-placeholder">
+            <!-- Konten tabel akan ditambahkan di sini -->
+          </div>
+        </div>
+        <div id="siklus-pendapatan-dan-penagihan-content" style="display: none">
+          <h2>Siklus Pendapatan dan Penagihan</h2>
+          <div class="content-placeholder">
+            <!-- Konten tabel akan ditambahkan di sini -->
+          </div>
+        </div>
+        <div id="siklus-pembelian-dan-pengeluaran-kas-content" style="display: none">
+          <h2>Siklus Pembelian dan Pengeluaran kas</h2>
+          <div class="content-placeholder">
+            <!-- Konten tabel akan ditambahkan di sini -->
+          </div>
+        </div>
+        <div id="siklus-penerimaan-dan-penggajian-karyawan-content" style="display: none">
+          <h2>Siklus Penerimaan dan Penggajian Karyawan</h2>
+          <div class="content-placeholder">
+            <!-- Konten tabel akan ditambahkan di sini -->
           </div>
         </div>
       </div>
