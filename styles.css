@@ -143,6 +143,77 @@ body {
   margin-bottom: 20px;
 }
 
+/* Table styles */
+#lingkungan-pengendalian-table,
+#pendapatan-dan-penagihan-table,
+#pembelian-dan-pengeluaran-kas-table,
+#penerimaan-dan-penggajian-karyawan-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#lingkungan-pengendalian-table th,
+#lingkungan-pengendalian-table td,
+#pendapatan-dan-penagihan-table th,
+#pendapatan-dan-penagihan-table td,
+#pembelian-dan-pengeluaran-kas-table th,
+#pembelian-dan-pengeluaran-kas-table td,
+#penerimaan-dan-penggajian-karyawan-table th,
+#penerimaan-dan-penggajian-karyawan-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+#lingkungan-pengendalian-table th,
+#pendapatan-dan-penagihan-table th,
+#pembelian-dan-pengeluaran-kas-table th,
+#penerimaan-dan-penggajian-karyawan-table th {
+  background-color: #f2f2f2;
+}
+
+.jawaban-klien,
+.bukti-doc {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Warna latar belakang untuk opsi */
+.jawaban-klien option[value="Y"],
+.bukti-doc option[value="S"] {
+  background-color: #90ee90;
+  color: #006400;
+}
+.jawaban-klien option[value="T"],
+.bukti-doc option[value="TS"] {
+  background-color: #ffb6c1;
+  color: #8b0000;
+}
+.jawaban-klien option[value="TR"],
+.bukti-doc option[value="TR"] {
+  background-color: #d3d3d3;
+  color: #4b4b4b;
+}
+
+/* Warna latar belakang untuk elemen select yang sudah dipilih */
+.jawaban-klien[data-value="Y"],
+.bukti-doc[data-value="S"] {
+  background-color: #90ee90;
+  color: #006400;
+}
+.jawaban-klien[data-value="T"],
+.bukti-doc[data-value="TS"] {
+  background-color: #ffb6c1;
+  color: #8b0000;
+}
+.jawaban-klien[data-value="TR"],
+.bukti-doc[data-value="TR"] {
+  background-color: #d3d3d3;
+  color: #4b4b4b;
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
   .main-card {

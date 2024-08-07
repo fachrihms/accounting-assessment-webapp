@@ -99,25 +99,521 @@
         <div id="siklus-lingkungan-pengendalian-content" style="display: none">
           <h2>Siklus Lingkungan Pengendalian</h2>
           <div class="content-placeholder">
-            <!-- Konten tabel akan ditambahkan di sini -->
+            <table id="lingkungan-pengendalian-table" class="editable-table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Scope/ Proses</th>
+                  <th>Jumlah Pertanyaan</th>
+                  <th>Jawaban Klien</th>
+                  <th>Bukti Doc</th>
+                  <th>Skor Jawaban Klien</th>
+                  <th>Skor Bukti Doc</th>
+                  <th>Skor Akhir</th>
+                  <th>Risiko</th>
+                  <th>Aktivitas Pengendalian</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Kepemimpinan</td>
+                  <td>5</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Struktur Organisasi</td>
+                  <td>10</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Kualitas SDM</td>
+                  <td>4</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button id="add-row">Tambah Baris</button>
+            <button id="add-column">Tambah Kolom</button>
           </div>
         </div>
         <div id="siklus-pendapatan-dan-penagihan-content" style="display: none">
           <h2>Siklus Pendapatan dan Penagihan</h2>
           <div class="content-placeholder">
-            <!-- Konten tabel akan ditambahkan di sini -->
+            <table id="pendapatan-dan-penagihan-table" class="editable-table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Scope/ Proses</th>
+                  <th>Jumlah Pertanyaan</th>
+                  <th>Jawaban Klien</th>
+                  <th>Bukti Doc</th>
+                  <th>Skor Jawaban Klien</th>
+                  <th>Skor Bukti Doc</th>
+                  <th>Skor Akhir</th>
+                  <th>Risiko</th>
+                  <th>Aktivitas Pengendalian</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Siklus Secara Umum</td>
+                  <td>10</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Proses Penerimaan Pesanan Pembelian</td>
+                  <td>20</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Proses Pelaksanaan Jasa, Pengepakan dan Pengiriman Barang / Produk</td>
+                  <td>4</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Proses Invoicing</td>
+                  <td>20</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Proses Penerimaan Pembayaran</td>
+                  <td>30</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button id="add-row">Tambah Baris</button>
+            <button id="add-column">Tambah Kolom</button>
           </div>
         </div>
         <div id="siklus-pembelian-dan-pengeluaran-kas-content" style="display: none">
           <h2>Siklus Pembelian dan Pengeluaran kas</h2>
           <div class="content-placeholder">
-            <!-- Konten tabel akan ditambahkan di sini -->
+            <table id="pembelian-dan-pengeluaran-kas-table" class="editable-table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Scope/ Proses</th>
+                  <th>Jumlah Pertanyaan</th>
+                  <th>Jawaban Klien</th>
+                  <th>Bukti Doc</th>
+                  <th>Skor Jawaban Klien</th>
+                  <th>Skor Bukti Doc</th>
+                  <th>Skor Akhir</th>
+                  <th>Risiko</th>
+                  <th>Aktivitas Pengendalian</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Siklus Secara Umum</td>
+                  <td>26</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Pengajuan Pesanan Pembelian</td>
+                  <td>21</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Penerimaan barang atau Jasa</td>
+                  <td>37</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Penerimaan Tagihan</td>
+                  <td>21</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Pengeluaran Kas</td>
+                  <td>31</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button id="add-row">Tambah Baris</button>
+            <button id="add-column">Tambah Kolom</button>
           </div>
         </div>
         <div id="siklus-penerimaan-dan-penggajian-karyawan-content" style="display: none">
           <h2>Siklus Penerimaan dan Penggajian Karyawan</h2>
           <div class="content-placeholder">
-            <!-- Konten tabel akan ditambahkan di sini -->
+            <table id="penerimaan-dan-penggajian-karyawan-table" class="editable-table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Scope/ Proses</th>
+                  <th>Jumlah Pertanyaan</th>
+                  <th>Jawaban Klien</th>
+                  <th>Bukti Doc</th>
+                  <th>Skor Jawaban Klien</th>
+                  <th>Skor Bukti Doc</th>
+                  <th>Skor Akhir</th>
+                  <th>Risiko</th>
+                  <th>Aktivitas Pengendalian</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Siklus Secara Umum</td>
+                  <td>16</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Penerimaan Karyawan</td>
+                  <td>9</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Penggajian</td>
+                  <td>18</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="bukti-doc">
+                      <option value="">Pilih</option>
+                      <option value="S">Setuju</option>
+                      <option value="TS">Tidak Setuju</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button id="add-row">Tambah Baris</button>
+            <button id="add-column">Tambah Kolom</button>
           </div>
         </div>
       </div>
