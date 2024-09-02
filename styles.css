@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   display: flex;
+  overflow-x: hidden;
 }
 
 .sidebar {
@@ -11,9 +12,10 @@ body {
   background-color: #333;
   color: white;
   padding: 20px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .sidebar h2 {
@@ -47,6 +49,8 @@ body {
   margin-left: 250px;
   padding: 0, 0, 0, 20px;
   flex: 1;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .header {
@@ -172,6 +176,11 @@ body {
   background-color: #f2f2f2;
 }
 
+.skor-bukti {
+  text-align: center;
+  min-width: 50px;
+}
+
 .jawaban-klien,
 .bukti-doc {
   width: 100%;
@@ -226,10 +235,13 @@ body {
     width: 50%;
     height: auto;
     position: relative;
+    overflow-y: visible;
   }
 
   .main-content {
     margin-left: 0;
+    height: auto;
+    overflow-y: visible;
   }
 
   .main-card {

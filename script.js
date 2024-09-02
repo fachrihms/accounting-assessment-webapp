@@ -198,56 +198,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Tabel Lingkungan Pengendalian
-  document.getElementById("add-row").addEventListener("click", function () {
-    var table = document.getElementById("lingkungan-pengendalian-table");
-    var newRow = table.insertRow(-1);
-    var colCount = table.rows[0].cells.length;
-
-    for (var i = 0; i < colCount; i++) {
-      var cell = newRow.insertCell(i);
-      if (i === 3) {
-        cell.appendChild(
-          createSelect("jawaban-klien", [
-            ["", "Pilih"],
-            ["Y", "Ya"],
-            ["T", "Tidak"],
-            ["TR", "Tidak relevan"],
-          ])
-        );
-      } else if (i === 4) {
-        cell.appendChild(
-          createSelect("bukti-doc", [
-            ["", "Pilih"],
-            ["S", "Setuju"],
-            ["TS", "Tidak Setuju"],
-            ["TR", "Tidak relevan"],
-          ])
-        );
-      } else {
-        cell.innerHTML = "";
-      }
-    }
-  });
-
-  document.getElementById("add-column").addEventListener("click", function () {
-    var table = document.getElementById("lingkungan-pengendalian-table");
-    var rows = table.rows;
-    var colName = prompt("Masukkan nama kolom baru:");
-
-    if (colName) {
-      for (var i = 0; i < rows.length; i++) {
-        var cell = rows[i].insertCell(-1);
-        if (i === 0) {
-          cell.innerHTML = colName;
-          cell.style.fontWeight = "bold";
-        } else {
-          cell.innerHTML = "";
-        }
-      }
-    }
-  });
-
   // Inisialisasi event listener untuk dropdown yang sudah ada
   document.querySelectorAll(".jawaban-klien, .bukti-doc").forEach(function (select) {
     select.addEventListener("change", function () {
@@ -255,6 +205,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  const dropdown = document.querySelectorAll(".jawaban-klien");
+
+  dropdown.forEach((dropd) => {
+    dropd.addEventListener("change", function () {
+      const row = this.closest("tr");
+      const nilaiCell = row.querySelector(".skor-bukti");
+
+      if (this.value === "Y") {
+        nilaiCell.textContent = "3";
+      } else if (this.value === "T") {
+        nilaiCell.textContent = "1";
+      } else if (this.value === "TR") {
+        nilaiCell.textContent = "0";
+      } else {
+        nilaiCell.textContent = "-";
+      }
+    });
+  });
   // Panggil fungsi saat halaman dimuat
   handleNavigation();
 });
