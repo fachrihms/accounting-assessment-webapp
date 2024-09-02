@@ -7,4 +7,6 @@ Asessment &amp; Improvement For Accounting &amp; Internal Control
 
 -Update v1.1 = Adding tables to each subcard in first card, need to fix the subcard so it can be seen as 3x3 matrix so its not take much space to bottom
 
--Update v1.2 =In future gonna add 2 more subcards to add more tables as client needed
+-Update v1.2 = Tidy up the questionnaire table and display the evidence scores according to the dropdown
+
+-Update v1.3 =In future gonna add 2 more subcards to add more tables as client needed
