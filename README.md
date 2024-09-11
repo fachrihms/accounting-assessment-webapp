@@ -9,4 +9,4 @@ Asessment &amp; Improvement For Accounting &amp; Internal Control
 
 -Update v1.2 = Tidy up the questionnaire table and display the evidence scores according to the dropdown
 
--Update v1.3 =In future gonna add 2 more subcards to add more tables as client needed
+-Update v1.3 = Adding some additional tables
