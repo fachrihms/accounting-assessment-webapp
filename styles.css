@@ -148,18 +148,32 @@ body {
 }
 
 /* Table styles */
-#lingkungan-pengendalian-table,
-#pendapatan-dan-penagihan-table,
+
+#kepemimpinan-table,
+#struktur-organisasi-table,
+#kualitas-sdm-table,
+#pengendalian-internal-table,
+#proses-penerimaan-table,
+#proses-pelaksanaan-table,
 #pembelian-dan-pengeluaran-kas-table,
 #penerimaan-dan-penggajian-karyawan-table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 25px;
 }
 
-#lingkungan-pengendalian-table th,
-#lingkungan-pengendalian-table td,
-#pendapatan-dan-penagihan-table th,
-#pendapatan-dan-penagihan-table td,
+#kepemimpinan-table th,
+#kepemimpinan-table td,
+#struktur-organisasi-table th,
+#struktur-organisasi-table td,
+#kualitas-sdm-table th,
+#kualitas-sdm-table td,
+#pengendalian-internal-table th,
+#pengendalian-internal-table td,
+#proses-penerimaan-table th,
+#proses-penerimaan-table td,
+#proses-pelaksanaan-table th,
+#proses-pelaksanaan-table td,
 #pembelian-dan-pengeluaran-kas-table th,
 #pembelian-dan-pengeluaran-kas-table td,
 #penerimaan-dan-penggajian-karyawan-table th,
@@ -169,8 +183,12 @@ body {
   text-align: left;
 }
 
-#lingkungan-pengendalian-table th,
-#pendapatan-dan-penagihan-table th,
+#kepemimpinan-table th,
+#struktur-organisasi-table th,
+#kualitas-sdm-table th,
+#proses-penerimaan-table th,
+#pengendalian-internal-table th,
+#proses-pelaksanaan-table th,
 #pembelian-dan-pengeluaran-kas-table th,
 #penerimaan-dan-penggajian-karyawan-table th {
   background-color: #f2f2f2;
