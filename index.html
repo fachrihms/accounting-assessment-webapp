@@ -177,6 +177,11 @@
                   </td>
                   <td class="skor-bukti"></td>
                 </tr>
+                <tr>
+                  <td colspan="2"></td>
+                  <td><strong>Total skor</strong></td>
+                  <td></td>
+                </tr>
               </tbody>
             </table>
             <table id="struktur-organisasi-table">
@@ -1457,12 +1462,7 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-        </div>
-        <div id="siklus-pembelian-dan-pengeluaran-kas-content" style="display: none">
-          <h2>Siklus Pembelian dan Pengeluaran kas</h2>
-          <div class="content-placeholder">
-            <table id="pembelian-dan-pengeluaran-kas-table" class="editable-table">
+            <table id="proses-invoicing-table">
               <thead>
                 <tr>
                   <th rowspan="2">No</th>
@@ -1471,13 +1471,13 @@
                   <th rowspan="2">Skor Jawaban</th>
                 </tr>
                 <tr>
-                  <th>Pengendalian Internal dan Akuntansi Secara Umum Pada Siklus Pembelian dan Pengeluaran Kas</th>
+                  <th>Proses Invoicing</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Siklus Secara Umum</td>
+                  <td>Apakah terdapat SOP untuk proses penagihan kepada pelanggan?</td>
                   <td>
                     <select class="jawaban-klien">
                       <option value="">Pilih</option>
@@ -1490,7 +1490,7 @@
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Pengajuan Pesanan Pembelian</td>
+                  <td>Apakah terdapat pemisahan tugas antara personil yang melakukan pencatatan akuntansi dan penagihan (yang membuat tagihan dan follow up kepada pelanggan) ?</td>
                   <td>
                     <select class="jawaban-klien">
                       <option value="">Pilih</option>
@@ -1503,7 +1503,12 @@
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Penerimaan barang atau Jasa</td>
+                  <td>
+                    Apakah sebelum menerbitkan tagihan terdapat proses untuk melakukan verifikasi dokumen surat jalan yang kembali dari pelanggan dengan dokumen purchases order, sales order?
+                    <br />
+                    <br />
+                    Verifikasi termasuk memeriksa keakuratan informasi pelanggan, harga, dan detail produk. Memastikan bahwa pesanan telah diterima dan sesuai dengan order pelanggan.
+                  </td>
                   <td>
                     <select class="jawaban-klien">
                       <option value="">Pilih</option>
@@ -1516,7 +1521,7 @@
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Penerimaan Tagihan</td>
+                  <td>Apakah pembuatan invoice dilakukan segera pada saat diterima dokumen surat jalan?</td>
                   <td>
                     <select class="jawaban-klien">
                       <option value="">Pilih</option>
@@ -1529,7 +1534,829 @@
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>Pengeluaran Kas</td>
+                  <td>Pajak: Apakah terdapat pedoman pajak internal terkait invoicing?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Pajak: Apakah terdapat proses penerbitan faktur pajak dalam proses ini?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Apakah terdapat pemeriksaan dan otorisasi (tandatangan) oleh atasan untuk menyetujui dokumen invoice sebelum diterbitkan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Apakah terdapat prosedur pemeriksaan dan otorisasi (tandatangan) oleh atasan untuk setiap perubahan atau penambahan invoice?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>
+                    Apakah dilakukan pencatatan rekapitulasi atas dokumen invoice yang dikirimkan kepada pelanggan?
+                    <br />
+                    <br />
+                    Contohnya rekapitulasi atau sistem pencatatan invoice pelanggan.
+                  </td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Apakah terdapat personil yang ditugaskan untuk melakukan follow up penagihan invoice?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>
+                    Apakah dilakukan pemeriksaan berkala dan silang?
+                    <br />
+                    <br />
+                    Contoh : pemeriksaan antara daftar invoice, daftar PO, daftar SO, daftar DO, daftar Faktur Pajak dan SPT
+                  </td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Retur: Apakah terdapat SOP untuk revisi invoice terkait retur barang?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Apakah terdapat otorisasi atas revisi invoice terkait retur barang?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Apakah terdapat pedoman akuntansi internal untuk pencatatan invoice?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Apakah dilakukan journal entry pencatatan pendapatan pada saat invoice dibuat?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Apakah terdapat otorisasi atas journal entry pencatatan pada saat invoice dibuat?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Apakah terdapat otorisasi atas revisi journal entry terkait retur?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Apakah perusahaan menggunakan voucher journal untuk dokumentasi journal entry pencatatan pendapatan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Apakah terdapat catatan atas piutang usaha yang belum ditagih?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Apakah terdapat laporan piutang usaha?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+              </tbody>
+            </table>
+            <table id="proses-penerimaan-pembayaran-table">
+              <thead>
+                <tr>
+                  <th rowspan="2">No</th>
+                  <th rowspan="1">Pertanyaan</th>
+                  <th rowspan="2">Jawaban</th>
+                  <th rowspan="2">Skor Jawaban</th>
+                </tr>
+                <tr>
+                  <th>Proses Penerimaan dan Pembayaran</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Apakah terdapat SOP untuk memeriksa pembayaran dari pelanggan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Apakah perusahaan menentukan rekening khusus untuk menerima pembayaran dari pelanggan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Apakah terdapat otorisasi atas dokumentasi (kwitansi) penerimaan pembayaran dari pelanggan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Apakah terdapat pedoman akuntansi internal untuk pencatatan penerimaan kas masuk?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Apakah terdapat otorisasi atas journal entry sebelum dilakukan pencatatan penerimaan pembayaran?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Apakah terdapat voucher bank atau kas masuk atas setiap penerimaan uang?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Apakah terdapat kwitansi untuk setiap penerimaan kas oleh kasir?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Apakah dilakukan perhitungan kas fisik pada setiap tutup kasir?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Apakah terdapat dokumentasi atas perhitungan kas fisik yang ditandatangani oleh atasan pada setiap tutup kasir?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Apakah hasil penerimaan kas tersebut dicatat setiap hari ke buku kas?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Apakah terdapat pemisahan tugas antara kasir dan personnel yang melakukan pencatatan ke buku kas atau sistem akuntansi?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Apakah kas yang diterima disimpan dalam brankas sebelum disetorkan ke bank?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Apakah terdapat pemisahan tugas antara kasir dan penanggungjawab brankas (pemegang kunci brankas)?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Apakah dilakukan perhitungan kas fisik pada brankas setiap buka kasir?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Apakah terdapat dokumentasi atas perhitungan kas fisik yang ditandatangani oleh atasan pada saat buka kasir?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Apakah bagian akuntansi mencatat penerimaan kas tepat waktu (yaitu setiap tutup kasir atau paling lambat keesokan harinya)?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Apakah terdapat otorisasi oleh atasan terhadap voucher jurnal entri pencatatan penerimaan kas?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Apakah terdapat otorisasi oleh atasan atas journal entry penerimaan kas/bank?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Apakah terdapat pedoman akuntansi internal untuk pencatatan penyisihan piutang tidak tertagih?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Apakah terdapat prosedur analisa dan penilaian atas ketertagihan dari masing-masing pelanggan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>Apakah terdapat kertas kerja penyisihan piutang tak tertagih?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>Apakah terdapat pembahasan dengan manajemen terkait umur piutang dan penagihan kepada pelanggan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>Apakah terdapat otorisasi untuk jurnal entry penyisihan piutang usaha tidak tertagih?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>Apakah terdapat journal voucher untuk pencatatan penyisihan piutang usaha tidak tertagih?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>Apakah terdapat daftar pendapatan yang belum diakui / pendapatan diterima di muka?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>Apakah terdapat kertas kerja pengakuan pendapatan untuk pendapatan diterima dimuka?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>Apakah secara berkala dilakukan rekonsiliasi / pemeriksaan silang antara data penjualan yang tercatat oleh bagian akuntansi dengan data penjualan yang dipegang oleh bagian penjualan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>Apakah perusahaan sudah menindaklanjuti hasil pemeriksaan silang / rekonsiliasi tersebut?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>29</td>
+                  <td>Pajak: Apakah terdapat pedoman pajak internal terkait penerimaan pembayaran?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>Pajak: Apakah terdapat proses permintaan bukti potong PPh kepada pelanggan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="siklus-pembelian-dan-pengeluaran-kas-content" style="display: none">
+          <h2>Siklus Pembelian dan Pengeluaran kas</h2>
+          <div class="content-placeholder">
+            <table id="pengendalian-internal-2-table">
+              <thead>
+                <tr>
+                  <th rowspan="2">No</th>
+                  <th rowspan="1">Pertanyaan</th>
+                  <th rowspan="2">Jawaban</th>
+                  <th rowspan="2">Skor Jawaban</th>
+                </tr>
+                <tr>
+                  <th>Pengendalian Internal Dan Akuntansi Secara Umum Pada Siklus Pembelian dan Pengeluaran Kas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Apakah terdapat Standard Operating Procedure (SOP) untuk siklus pembelian dan pengeluaran kas?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Apakah kebijakan pengakuan biaya, kapitalisasi aset, dan liabilitas telah sesuai dengan persyaratan Standar Akuntansi Keuangan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Apakah personil akuntansi memahami konsep pengakuan beban, kapitalisasi aset dan utang sesuai dengan persyaratan Standar Akuntansi keuangan?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    Apakah seluruh proses bisnis pada siklus pembelian dan pengeluaran kas diketahui oleh personil terkait di masing-masing bagian?
+                    <br />
+                    <br />
+                    Contohnya: personnel bagian gudang memahami alur pembelian persediaan, bagian keuangan memahami proses pengadaan aset tetap, dsb.
+                  </td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Apakah terdapat pemeriksaan berkala dan pemeriksaan silang atas laporan penerimaan barang dengan laporan pengeluaran oleh personil selain yang membuat laporan penerimaan barang dan pembayaran?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>
+                    Apakah ada pembagian tugas yang jelas siapa yang melaksanakan pengajuan pembelian (purchase request), membuat purchase order, pembuatan kontrak dengan penjual, menerima barang/jasa, melakukan pencatatan, dan pembayaran,
+                    mengurus administrasi pajak?
+                  </td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>
+                    Apakah terdapat penyimpanan dokumen (filing) untuk setiap aktivitas perusahaan yang disusun secara berurutan berdasarkan waktu pembuatan dokumen tersebut?
+                    <br />
+                    <br />
+                    Contoh: filing dokumen purchase order, filing dokumen sales order, filing dokumen delivery order, filing invoice, filing dokumen voucher bank keluar, filing dokumen jurnal voucher
+                  </td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>
+                    Apakah terdapat pembatasan akses terhadap catatan, laporan atau data akuntansi dan keuangan terkait pengeluaran selain personil tertentu yang diberikan wewenang?
+                    <br />
+                    <br />
+                    Contoh: personil selain bagian akuntansi atau manajer akuntansi dan keuangan tidak dapat mengakses file atau dokumen atau laporan pengeluaran
+                  </td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Apakah terdapat pedoman akuntansi internal atas siklus bisnis pembelian dan pengeluaran?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Apakah perusahaan menerapkan sistem penghargaan kepada personilnya jika dapat memperoleh efisiensi/harga yang lebih rendah dalam transaksi pengeluaran?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>
+                    Apakah perusahaan menerapkan sistem anggaran dalam pembelian dan pengeluaran?
+                    <br />
+                    <br />
+                    Contoh: jika tidak sesuai anggaran maka pembelian tidak dapat disetujui.
+                  </td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Apakah setiap bulannya terdapat laporan pengeluaran dan utang usaha (daftar utang usaha), dan laporan arus kas pengeluaran?</td>
+                  <td>
+                    <select class="jawaban-klien">
+                      <option value="">Pilih</option>
+                      <option value="Y">Ya</option>
+                      <option value="T">Tidak</option>
+                      <option value="TR">Tidak relevan</option>
+                    </select>
+                  </td>
+                  <td class="skor-bukti"></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Apakah terdapat personil yang melakukan pemeriksaan atas laporan tersebut sebelum disampaikan kepada manajemen, personil yang memeriksanya adalah selain yang membuat laporan tersebut?</td>
                   <td>
                     <select class="jawaban-klien">
                       <option value="">Pilih</option>
@@ -1546,62 +2373,7 @@
         </div>
         <div id="siklus-penerimaan-dan-penggajian-karyawan-content" style="display: none">
           <h2>Siklus Penerimaan dan Penggajian Karyawan</h2>
-          <div class="content-placeholder">
-            <table id="penerimaan-dan-penggajian-karyawan-table" class="editable-table">
-              <thead>
-                <tr>
-                  <th rowspan="2">No</th>
-                  <th rowspan="1">Pertanyaan</th>
-                  <th rowspan="2">Jawaban</th>
-                  <th rowspan="2">Skor Jawaban</th>
-                </tr>
-                <tr>
-                  <th>Pengendalian Internal Dan Akuntansi Secara Umum Pada Siklus Pendapatan dan Penagihan</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Siklus Secara Umum</td>
-                  <td>
-                    <select class="jawaban-klien">
-                      <option value="">Pilih</option>
-                      <option value="Y">Ya</option>
-                      <option value="T">Tidak</option>
-                      <option value="TR">Tidak relevan</option>
-                    </select>
-                  </td>
-                  <td class="skor-bukti"></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Penerimaan Karyawan</td>
-                  <td>
-                    <select class="jawaban-klien">
-                      <option value="">Pilih</option>
-                      <option value="Y">Ya</option>
-                      <option value="T">Tidak</option>
-                      <option value="TR">Tidak relevan</option>
-                    </select>
-                  </td>
-                  <td class="skor-bukti"></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Penggajian</td>
-                  <td>
-                    <select class="jawaban-klien">
-                      <option value="">Pilih</option>
-                      <option value="Y">Ya</option>
-                      <option value="T">Tidak</option>
-                      <option value="TR">Tidak relevan</option>
-                    </select>
-                  </td>
-                  <td class="skor-bukti"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <div class="content-placeholder"></div>
         </div>
       </div>
     </div>
