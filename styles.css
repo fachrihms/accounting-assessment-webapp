@@ -161,7 +161,14 @@ body {
 #proses-penerimaan-pembayaran-table,
 /* Pembelian dan Pengeluaran table */
 #pengendalian-internal-2-table,
-#penerimaan-dan-penggajian-karyawan-table {
+#proses-pengajuan-table,
+#proses-penerimaan-barang-table,
+#proses-penerimaan-tagihan-table,
+#proses-pengeluaran-kas-table,
+/* Penerimaan dan Penggajian table */
+#pengendalian-internal-3-table,
+#proses-penerimaan-karyawan-table,
+#proses-penggajian-table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 25px;
@@ -188,8 +195,21 @@ body {
 /* Pembelian dan Pengeluaran table */
 #pengendalian-internal-2-table th,
 #pengendalian-internal-2-table td,
-#penerimaan-dan-penggajian-karyawan-table th,
-#penerimaan-dan-penggajian-karyawan-table td {
+#proses-pengajuan-table th,
+#proses-pengajuan-table td,
+#proses-penerimaan-barang-table th,
+#proses-penerimaan-barang-table td,
+#proses-penerimaan-tagihan-table th,
+#proses-penerimaan-tagihan-table td,
+#proses-pengeluaran-kas-table th,
+#proses-pengeluaran-kas-table td,
+/* Penerimaan dan Penggajian table */
+#pengendalian-internal-3-table th,
+#pengendalian-internal-3-table td,
+#proses-penerimaan-karyawan-table th,
+#proses-penerimaan-karyawan-table td,
+#proses-penggajian-table th,
+#proses-penggajian-table td {
   border: 1px solid black;
   padding: 8px;
   text-align: left;
@@ -207,8 +227,14 @@ body {
 #proses-penerimaan-pembayaran-table th,
 /* Pendapatan dan Penagihan table */
 #pengendalian-internal-2-table th,
-#pembelian-dan-pengeluaran-kas-table th,
-#penerimaan-dan-penggajian-karyawan-table th {
+#proses-pengajuan-table th,
+#proses-penerimaan-barang-table th,
+#proses-penerimaan-tagihan-table th,
+#proses-pengeluaran-kas-table th,
+/* Penerimaan dan Penggajian table */
+#pengendalian-internal-3-table th,
+#proses-penerimaan-karyawan-table th
+#proses-penggajian-table th {
   background-color: #f2f2f2;
 }
 
