@@ -9,6 +9,6 @@ Asessment &amp; Improvement For Accounting &amp; Internal Control
 
 -Update v1.2 = Tidy up the questionnaire table and display the evidence scores according to the dropdown
 
--Update v1.3 = Adding some additional tables
--Update v1.4 = Adding some additional tables
+-Update v1.3, v1.4 = Adding some additional tables
+
 -Update v1.5 = Adding more additional tables and new "Total skor rows"
